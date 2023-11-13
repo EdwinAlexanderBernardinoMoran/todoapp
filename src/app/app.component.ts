@@ -11,4 +11,13 @@ import { RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
   title = 'todoapp';
+
+  welcome:string = 'Welcome Angular 17!';
+
+  // Quiere decir que sera un array de string
+  tasks:string[] = [
+    'Instalar Angular CLI',
+    'Crear proyecto',
+    'Crear componentes'
+  ]
 }
