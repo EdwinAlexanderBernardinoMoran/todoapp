@@ -2,6 +2,12 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 
+interface Character {
+  name: string;
+  age: number;
+  avatar: string;
+}
+
 @Component({
   selector: 'app-root',
   standalone: true,
@@ -20,4 +26,13 @@ export class AppComponent {
     'Crear proyecto',
     'Crear componentes'
   ]
+
+  name:string = "Edwin Alexander";
+  habilitado: boolean = true;
+
+  person:Character = {
+    name: "Edwin",
+    age: 21,
+    avatar: 'https://nimapinfotech.com/wp-content/uploads/2023/01/como-comecar-com-angular.png'
+  }
 }

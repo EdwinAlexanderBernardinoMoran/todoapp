@@ -3,3 +3,9 @@
 <ul *ngFor="let task of tasks">
   <li>{{ task }}</li>
 </ul>
+
+<input type="text" [placeholder]="name">
+<button [disabled]="habilitado">Click Me</button>
+
+<p>Mi nombre es {{ person.name }} tengo {{ person.age }} mi framework favorito es: </p>
+<img [src]="person.avatar" [alt]="person.name" [title]="person.name">
